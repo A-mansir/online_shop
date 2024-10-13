@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style> 
+ body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6aa3b;
+    background-image: url("images/banner-bg.png");
+    background-size: 110%;
+
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+form {
+    background-image: url("images/banner-bg.png");
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="date"] {
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+    <center>
+        <b><h3>Admin Login.</h3></b>
+<div class="container">
+    <form action="admin_login.php" method="POST">
+        Username: <input type="text" name="username" required><br>
+        Password: <input type="password" name="password" required><br>
+        <button type="submit" class="btn btn-primary">Login</button>
+        
+    </form>
+</div>
+</center>
+    
+<?php include 'footer.php'; ?>
+</body>
+</html>
